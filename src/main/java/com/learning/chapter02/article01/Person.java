@@ -31,8 +31,8 @@ public class Person {
     /*
     不必在每次调用它们的时候都创建一个新对象
      */
-    private Person getPerson(){
-        return this.person;
+    private static Person getPerson(){
+        return person;
     }
 
     /*
