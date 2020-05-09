@@ -16,6 +16,15 @@ class Student extends Person{
 
 }
 
+class teacher {
+    private int age;
+    private String sex;
+
+    public teacher(int age,String sex){
+        this.age = age;
+        this.sex = sex;
+    }
+}
 
 public class Person {
     private int age;
@@ -27,6 +36,14 @@ public class Person {
         this.age = age;
         this.sex = sex;
     }
+
+    /*
+    方法有名称
+    */
+    public static teacher createTeather(int age,String sex){
+        return new teacher(age,sex);
+    }
+
 
     /*
     不必在每次调用它们的时候都创建一个新对象
