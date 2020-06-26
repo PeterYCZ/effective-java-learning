@@ -58,7 +58,7 @@ public class NutritionFactsBuilder {
     }
 
     public void Test(){
-        NutritionFactsBuilder cocaCola = new Builder(240,8)
+        NutritionFactsBuilder cocaCola = new NutritionFactsBuilder.Builder(240,8)
                 .calories(100).sodium(35).carbohydrate(27).build();
     }
 
